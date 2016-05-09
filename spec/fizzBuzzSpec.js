@@ -17,4 +17,8 @@ describe('FizzBuzz', function() {
     expect(fizzBuzz.calc(15)).toEqual('FizzBuzz');
   });
 
+  it('Prints out number if not a multiple of 3 or 5', function() {
+    expect(fizzBuzz.calc(2)).toEqual(2);
+  });
+
 });
