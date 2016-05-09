@@ -1,7 +1,12 @@
 function FizzBuzz() {
 
-FizzBuzz.prototype.calc = function(number) {
-    return 'Fizz';
-}
-
+  FizzBuzz.prototype.calc = function(number) {
+    if (number % 15 === 0) {
+      return 'FizzBuzz';
+    } else if (number % 5 === 0) {
+      return 'Buzz';
+    } else {
+      return 'Fizz';
+    }
+  }
 };

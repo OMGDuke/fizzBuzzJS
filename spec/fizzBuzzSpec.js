@@ -13,4 +13,8 @@ describe('FizzBuzz', function() {
     expect(fizzBuzz.calc(5)).toEqual('Buzz');
   });
 
+  it('Prints out \'FizzBuzz\' if a multiple of 3 and 5', function() {
+    expect(fizzBuzz.calc(15)).toEqual('FizzBuzz');
+  });
+
 });
